@@ -152,7 +152,7 @@ mysqli_close($conn);
                     </a>
                     <ul class="post-info">
                       <li><a href="#">Admin</a></li>
-                      <li><a href="#">May 31, 2020</a></li>
+                      <li><a href="#"><?= date_format(date_create($row['publish_date']), 'g:ia \o\n l jS F Y'); ?></a></li>
                       <li><a href="#">12 Comments</a></li>
                     </ul>
                     <p><?= $row['content']; ?></p>
